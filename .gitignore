@@ -1,0 +1,37 @@
+# Foundry build artifacts
+/out
+/cache
+/broadcast
+
+# Foundry coverage
+/lcov.info
+/coverage
+
+# Foundry docs
+/docs
+
+# Environment files — never commit real keys
+.env
+.env.local
+.env.*.local
+
+# Node (if using hardhat/scripts alongside Foundry)
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Deployment artifacts (committed selectively per network)
+/deployments/localhost.json
+
+# Slither
+slither.db.json
