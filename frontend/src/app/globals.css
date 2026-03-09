@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar       { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #080f1e; }
+  ::-webkit-scrollbar-thumb { background: #1a2e47; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #2a4060; }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-cinzel), Georgia, serif; }
+  .font-body    { font-family: var(--font-inter), system-ui, sans-serif; }
+  .font-mono    { font-family: var(--font-fira-code), monospace; }
+
+  /* Text shimmer effect for headings */
+  .text-shimmer {
+    background: linear-gradient(90deg, #f6c84e 0%, #fff8e1 40%, #e8a820 60%, #f6c84e 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+  }
+
+  /* Glass card */
+  .glass {
+    background: rgba(13, 24, 41, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Pulsing border glow */
+  .border-glow-gold {
+    box-shadow: 0 0 0 1px rgba(246, 200, 78, 0.2), 0 0 20px rgba(246, 200, 78, 0.08);
+  }
+  .border-glow-danger {
+    box-shadow: 0 0 0 1px rgba(224, 82, 82, 0.3), 0 0 20px rgba(224, 82, 82, 0.1);
+  }
+}
