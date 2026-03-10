@@ -1,6 +1,6 @@
 # Base-Conquest
 
-A persistent, on-chain territory strategy game on Base — inspired by Risk, redesigned for Web3.
+A persistent, on-chain territory strategy game on Base
 
 ---
 
